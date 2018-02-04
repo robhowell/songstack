@@ -2,10 +2,12 @@ import React from 'react';
 import Dropbox from 'dropbox';
 import { Button, Message, Segment } from 'semantic-ui-react';
 
-const CLIENT_ID = 'mock-key';
+const { REACT_APP_DROPBOX_APP_KEY } = process.env;
 
 const Login = () => {
-  const dropboxClient = new Dropbox.Dropbox({ clientId: CLIENT_ID });
+  const dropboxClient = new Dropbox.Dropbox({
+    clientId: REACT_APP_DROPBOX_APP_KEY,
+  });
   const authUrl = dropboxClient.getAuthenticationUrl(window.location.href);
 
   return (
