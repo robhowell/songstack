@@ -1,4 +1,7 @@
 # SongStack
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/robhowell/songstack.svg)](https://greenkeeper.io/)
+
 A tool for songwriters
 
 ## How to use
